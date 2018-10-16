@@ -1,6 +1,7 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class WeatherAnalysis {
+public class PierreJulienMorangeWeatherAnalysis2 {
     public static void main(String[] args) {
         int days = 0;
         double temp = 0;
@@ -38,6 +39,10 @@ public class WeatherAnalysis {
             }
         }
         System.out.println(end + " days were above average.");//print the result
+        System.out.println(Arrays.toString(box));
+        Arrays.sort(box); //sort array
+        System.out.println("Top coldest days " + box[0] + ", " + box[1]);
+        System.out.println("Top hottest days " + box[box.length-1] + ", " + box[box.length-2]);
 
     }
 }

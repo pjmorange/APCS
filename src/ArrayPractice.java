@@ -9,6 +9,13 @@ public class ArrayPractice {
 
         }
         System.out.println(Arrays.toString(numbers));
-
+        randomArray();
+    }
+    public static void randomArray(){
+        int[] box = new int[(int)(Math.random()*10)+1];
+        for(int i = 0; i < box.length; i++){
+            box[i] = (int)(Math.random()*10)+1;;
+        }
+        System.out.println(Arrays.toString(box));
     }
 }
